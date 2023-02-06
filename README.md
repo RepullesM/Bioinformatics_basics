@@ -8,28 +8,27 @@ Dentro de una terminal tienes lo que se llama *shell*, que es parte del sistema 
 Todos los programas, en general funcionan igual: le dices el programa, las opciones que quieras usar (se llaman *flag* y son opcionales), el input > output
 ```programa -opcion1 -opcion2 input > output```
 ### Comandos esenciales:
-```echo $SHELL``` para saber qué shell estás usando
+1. ```echo $SHELL``` para saber qué shell estás usando
 ``` echo``` es un comando que se usa para mostrar mensajes
-``` cd ``` para cambiar de directorio. Si quiero ir a la carpeta anterior, se ponen dos puntos: ```cd ../``` 
-```mkdir``` para crear carpeta. Si quiero crear varias carpetas al mismo tiempo, escriber varios nombres:
+2. ``` cd ``` para cambiar de directorio. Si quiero ir a la carpeta anterior, se ponen dos puntos: ```cd ../``` 
+3. ```mkdir``` para crear carpeta. Si quiero crear varias carpetas al mismo tiempo, escriber varios nombres:
 ```
 mkdir folder1 folder2 folder3
 ```
-```pwd``` para saber dónde estoy
-```ls``` da una lista de lo que hay
+4. ```pwd``` para saber dónde estoy
+5. ```ls``` da una lista de lo que hay
 ```ls -l``` da una lista larga, con info de cada archivo (como por ej el tamaño)
 ```ls /etc``` da una lista del contenido de los directorios
-```cat``` para visualizar archivos no binarios. También puedes unir varios archivos (si no le das output, te los une en la pantalla, sin crear un nuevo archivo)
+6. ```cat``` para visualizar archivos no binarios. También puedes unir varios archivos (si no le das output, te los une en la pantalla, sin crear un nuevo archivo)
 ```
 cat archivo1 archivo2 > test.out
 ```
-```git clone``` se descarga el repositorio que le especifíques. 
-```gunzip``` para descomprimir archivos zip
-```wget``` para descargar programas
+7. ```git clone``` se descarga el repositorio que le especifíques. 
+8. ```gunzip``` para descomprimir archivos zip
+9. ```wget``` para descargar programas
 En metacentrum la mayoría de los programas ya están decargados y lo que hay que hacer es llamarlos con ```module add programa1``` 
-```|``` pipe
-```unzip``` para descomprimir .zip
-```grep``` busca patrones regulares
+10. ```unzip``` para descomprimir .zip
+11. ```grep``` busca patrones regulares
 ```programa1 -man``` para el manual del programa1
 ```programa1 --help``` para obtener ayuda del programa1
 ```sort``` para ordenar según el parámetro que le digas
@@ -52,3 +51,9 @@ Además puedo calcular la media:
 ```
 awk '{sum +=$3; n++} END {if(n>0) print sum/n; }'
 ```
+#### **Concatenar comandos***
+```|``` hace que la salida del primero se convierta en la entrada del segundo
+```&``` hace que dos o mas comandos se ejecuten a la vez
+```||``` el segundo comando se ejecuta si el primero acaba con exito 
+```&&``` el segundo comando se ejecuta solo si el primero acaba con exito
+```;``` el segundo se ejecuta sin importar el resultado del primero 
