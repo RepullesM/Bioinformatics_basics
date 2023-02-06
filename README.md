@@ -1,4 +1,6 @@
 # INTRODUCCIÓN A LA BIOINFORMÁTICA
+Tutoriales básicos: [Linux tutorial](https://ryanstutorials.net/linuxtutorial/navigation.php) y [Python Tutorial](https://stackabuse.com/python-tutorial-for-absolute-beginners/)
+
 ## **Ambiente UNIX**
 [Aquí](https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022/blob/main/bash_tutorial.md) hay una guía rápida de comando UNIX. 
 Dentro de una terminal tienes lo que se llama *shell*, que es parte del sistema operativo que define cómo se va a comportar la terminal y cómo va a verse. Hay varios *shell* disponibles, pero el más común es *BASH* (Bourne again shell). 
