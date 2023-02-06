@@ -52,8 +52,8 @@ Además puedo calcular la media:
 awk '{sum +=$3; n++} END {if(n>0) print sum/n; }'
 ```
 #### **Concatenar comandos***
-```|``` hace que la salida del primero se convierta en la entrada del segundo
-```&``` hace que dos o mas comandos se ejecuten a la vez
-```||``` el segundo comando se ejecuta si el primero acaba con exito 
-```&&``` el segundo comando se ejecuta solo si el primero acaba con exito
-```;``` el segundo se ejecuta sin importar el resultado del primero 
+1. ```|``` hace que la salida del primero se convierta en la entrada del segundo
+2. ```&``` hace que dos o mas comandos se ejecuten a la vez
+3. ```||``` el segundo comando se ejecuta si el primero acaba con exito 
+4. ```&&``` el segundo comando se ejecuta solo si el primero acaba con exito
+5. ```;``` el segundo se ejecuta sin importar el resultado del primero 
