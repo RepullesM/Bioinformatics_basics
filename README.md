@@ -19,16 +19,17 @@ mkdir folder1 folder2 folder3
 5. ```ls``` da una lista de lo que hay
 ```ls -l``` da una lista larga, con info de cada archivo (como por ej el tamaño)
 ```ls /etc``` da una lista del contenido de los directorios
-6. ```cat``` para visualizar archivos no binarios. También puedes unir varios archivos (si no le das output, te los une en la pantalla, sin crear un nuevo archivo)
+6. ```du -h``` ppara ver el tamaño de las carpetas 
+7. ```cat``` para visualizar archivos no binarios. También puedes unir varios archivos (si no le das output, te los une en la pantalla, sin crear un nuevo archivo)
 ```
 cat archivo1 archivo2 > test.out
 ```
-7. ```git clone``` se descarga el repositorio que le especifíques. 
-8. ```gunzip``` para descomprimir archivos zip
-9. ```wget``` para descargar programas
+8. ```git clone``` se descarga el repositorio que le especifíques. 
+9. ```gunzip``` para descomprimir archivos zip
+10. ```wget``` para descargar programas
 En metacentrum la mayoría de los programas ya están decargados y lo que hay que hacer es llamarlos con ```module add programa1``` 
-10. ```unzip``` para descomprimir .zip
-11. ```grep``` busca patrones regulares
+11. ```unzip``` para descomprimir .zip
+12. ```grep``` busca patrones regulares
 ```programa1 -man``` para el manual del programa1
 ```programa1 --help``` para obtener ayuda del programa1
 ```sort``` para ordenar según el parámetro que le digas
