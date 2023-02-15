@@ -10,25 +10,38 @@ Todos los programas, en general funcionan igual: le dices el programa, las opcio
 ### Comandos esenciales:
 1. ```echo $SHELL``` para saber qué shell estás usando
 ``` echo``` es un comando que se usa para mostrar mensajes
+
 2. ``` cd ``` para cambiar de directorio. Si quiero ir a la carpeta anterior, se ponen dos puntos: ```cd ../``` 
+
 3. ```mkdir``` para crear carpeta. Si quiero crear varias carpetas al mismo tiempo, escriber varios nombres:
 ```
 mkdir folder1 folder2 folder3
 ```
+Para **crear carpetas con numeros consecutivos** :
+```mkdir bc{01..12}``` #*mirar bien que tiene solo 2 puntos suspensivos*
+
 4. ```pwd``` para saber dónde estoy
+
 5. ```ls``` da una lista de lo que hay
 ```ls -l``` da una lista larga, con info de cada archivo (como por ej el tamaño)
 ```ls /etc``` da una lista del contenido de los directorios
+
 6. ```du -h``` ppara ver el tamaño de las carpetas 
+
 7. ```cat``` para visualizar archivos no binarios. También puedes unir varios archivos (si no le das output, te los une en la pantalla, sin crear un nuevo archivo)
 ```
 cat archivo1 archivo2 > test.out
 ```
+
 8. ```git clone``` se descarga el repositorio que le especifíques. 
+
 9. ```gunzip``` para descomprimir archivos zip
+
 10. ```wget``` para descargar programas
 En metacentrum la mayoría de los programas ya están decargados y lo que hay que hacer es llamarlos con ```module add programa1``` 
+
 11. ```unzip``` para descomprimir .zip
+
 12. ```grep``` busca patrones regulares
 ```programa1 -man``` para el manual del programa1
 ```programa1 --help``` para obtener ayuda del programa1
@@ -53,6 +66,7 @@ Además puedo calcular la media:
 awk '{sum +=$3; n++} END {if(n>0) print sum/n; }'
 ```
 #### **Concatenar comandos***
+
 1. ```|``` hace que la salida del primero se convierta en la entrada del segundo
 2. ```&``` hace que dos o mas comandos se ejecuten a la vez
 3. ```||``` el segundo comando se ejecuta si el primero acaba con exito 
