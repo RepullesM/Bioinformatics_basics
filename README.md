@@ -66,6 +66,11 @@ Además puedo calcular la media:
 ```
 awk '{sum +=$3; n++} END {if(n>0) print sum/n; }'
 ```
+Buscar el read "23a63..." en el archivo trimmed_bc01.fastq e imprimir las 10 filas de despues (-A after). Si quiesiese imprimir las columnas de antes: -b (before)
+```
+grep -A 10 23a636c0-9f8b-42a3-986a-c401afee6d95 trimming_adapt/default_parameters/trimmed_bc01.fastq
+```
+
 #### **Concatenar comandos***
 
 1. ```|``` hace que la salida del primero se convierta en la entrada del segundo
