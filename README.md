@@ -48,7 +48,7 @@ En metacentrum la mayoría de los programas ya están decargados y lo que hay qu
 ```sort``` para ordenar según el parámetro que le digas
 ```awk``` para manipular archivos de texto
 
-#### **Buscar patrones regulares con grep**
+#### **Buscar patrones regulares con [grep](https://www.freecodecamp.org/espanol/news/grep-command-tutorial-how-to-search-for-a-file-in-linux-and-unix-with-recursive-find/)**
 El patrón de texto que se quiere buscar, se pone siempre entre comillas. [Aquí](http://sospedia.net/el-shell-bash-de-gnulinux-4-expresiones-regulares/) hay una página con expresiones regulares comunes y el [manual](https://www.gnu.org/savannah-checkouts/gnu/grep/manual/grep.html).
 
 **Ejemplos:**
