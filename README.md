@@ -49,7 +49,7 @@ En metacentrum la mayoría de los programas ya están decargados y lo que hay qu
 ```awk``` para manipular archivos de texto
 
 #### **Buscar patrones regulares con grep**
-El patrón de texto que se quiere buscar, se pone siempre entre comillas. [Aquí](http://sospedia.net/el-shell-bash-de-gnulinux-4-expresiones-regulares/) hay una página con expresiones regulares comunes. 
+El patrón de texto que se quiere buscar, se pone siempre entre comillas. [Aquí](http://sospedia.net/el-shell-bash-de-gnulinux-4-expresiones-regulares/) hay una página con expresiones regulares comunes y el [manual](https://www.gnu.org/savannah-checkouts/gnu/grep/manual/grep.html).
 **Ejemplos:**
 En archivos *.fastq* (por ejemplo el output de *guppy*), cada *read* tiene un identificador (id) que empieza por @ y luego info donde por ejemplo, especifica la longitud de los reads.
 *(Para que lea los archivos .fastq hay que descomprimirlos primero)*
