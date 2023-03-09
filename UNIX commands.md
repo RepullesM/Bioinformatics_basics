@@ -75,4 +75,6 @@
 - ```diff -y -W 70 --suppress-common-lines arch1 arch2``` lista solo las lineas modificadas
 - ```colordiff --suppress-common-lines arch1 arch2``` lo pone por colores (apt-get para instalar el paquete en el sistema si usas ubuntu)
 
-```colordiff --suppress-common-lines --brief trimming_adapt/default_parameters/trimmed_2/reads_ids_bc01.txt output_guppy_3/trimming_porechop/reads_ids_bc01.txt```
+```
+colordiff --suppress-common-lines --brief trimming_adapt/default_parameters/trimmed_2/reads_ids_bc01.txt output_guppy_3/trimming_porechop/reads_ids_bc01.txt
+```
