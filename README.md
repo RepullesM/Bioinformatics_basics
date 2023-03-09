@@ -60,7 +60,7 @@ grep "^@" fastq_runid.fastq
 ```
 Además puedo pedirle que me lo ordene por la longitud de los reads con sort:
 ```
-grep "^@" fastq_runid.fastq | awk '{print $1 " " $5}' | sort -k2,2 > test?longitude_reads.txt
+grep "^@" fastq_runid.fastq | awk '{print $1 " " $5}' | sort -k2,2 > test_longitude_reads.txt
 ```
 Además puedo calcular la media: 
 ```
