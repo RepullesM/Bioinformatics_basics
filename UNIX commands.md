@@ -6,6 +6,7 @@
    - ```ls -l``` lista larga con info de cada archivo (tamaño, fecha...)
    - ```ls -la``` 
    - ```ls/etc``` lista de contenidos de los directorios
+   - ```ls fileX``` lista del contenido del directorio "fileX"
 - ```cd bacchus``` cambiar al directorio "bacchus"
     - ```cd``` cambiar a home dir
 - ```pwd``` ver dónde estás
