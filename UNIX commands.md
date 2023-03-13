@@ -7,25 +7,42 @@
    - ```ls -la``` 
    - ```ls/etc``` lista de contenidos de los directorios
    - ```ls fileX``` lista del contenido del directorio "fileX"
+
 - ```cd bacchus``` cambiar al directorio "bacchus"
     - ```cd``` cambiar a home dir
+
 - ```pwd``` ver dónde estás
+
 - ```du -h``` para ver el tamaño de cada carpeta
+
 - ```mkdir bacchus``` Crear directorio "bacchus"
+
 - ```rm file``` borrar file
     - ```rm -r dir``` borrar dir
     - ```rm -f file```force remove file
     - ```rm -rf dir``` force remove dir (*TENER CUIDADOOO*)
-- ```cp file1 file2``` copy *file1* to *file1*
+
+- ```cp file1 file2``` copy *file1* in the current directory and calls it *file2* (si en el nombre de file2 es un camino a otro drectorio, lo copias a ese)
     - ```cp -r  dir1 dir 2``` copy directories
+    - ```cp root/directory/file1 . ``` copia el archivo file1 de la carpeta directory en el directorio actual (lo llamas con el . ) y deja el nombre igual
+
 - ```mv file1 file2``` rename or move file1 to file2. si file2 existe, mueve file1 a file2
+
 - ```ln -s file link``` create symbolic lik *link* to file
+
 - ```touch file``` create or update file
-- ```cat > file``` places standard input into *file*
+
+- ```cat``` concatenate
+      - ```cat > file``` places standard input into *file*
+
 - ```more file``` output the contents of *file*
+
 - ```head file``` output the first 10 lines of *file*
+
 - ```tail file``` 10 last lines of *file*
     - ```tail -f file``` contenido de *files* as it grows, starting with the last 10 lines 
+
+- ```clear``` limpiar la terminal (lo que ves)
 
 ## Process Management
 - ```ps``` display your currently active processes
