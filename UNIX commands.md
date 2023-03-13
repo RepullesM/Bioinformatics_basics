@@ -32,7 +32,8 @@
 
 - ```touch file``` create or update file
 
-- ```cat``` concatenate
+- ```cat``` concatenate. Para visualizar archivos no binarios. También puedes unir varios archivos (si no le das output, te los une en la pantalla, sin crear un nuevo archivo)
+      - ```cat readme.txt``` para leer el archivo en la pantalla
       - ```cat > file``` places standard input into *file*
 
 - ```more file``` output the contents of *file*
@@ -43,6 +44,8 @@
     - ```tail -f file``` contenido de *files* as it grows, starting with the last 10 lines 
 
 - ```clear``` limpiar la terminal (lo que ves)
+
+- ```less readme.txt``` escribe el contenido de un archivo en la pantalla pagina a pagina. 
 
 ## Process Management
 - ```ps``` display your currently active processes
