@@ -59,14 +59,28 @@
 - ```fb n ``` brings job *n* to the foreground
 
 ## Searching
+**GREP**
 - ```grep pattern files``` search for pattern in *files*
       - ```grep -r pattern dir``` search recursively for *pattern* in *dir*
 - ```command | grep pattern``` search for *pattern* in the output of *command*
 - ```locate file``` find all instances of *file*
 - ``` grep "^@" fastq_runid.fastq``` para los archivos fastq que cada read tiene un *id* que empieza por @
       - ```grep "^@" fastq_runid.fastq | awk '{print $1 " " $5}' | sort -k2,2 > test_longitude_reads.txt``` que ademas me lo ordene por longitud del read
-- ```awk '{sum +=$3; n++} END {if(n>0) print sum/n; }' ``` para calcular la media de la longitud del read
 - ```grep -A 10 23a636c0-9f8b-42a3-986a-c401afee6d95 trimming_adapt/default_parameters/trimmed_bc01.fastq``` buscar el read "*26a63..*" en el archivo *trimmed_bc01.fastq* e imprimir las primeras 10 lineas de despues (-A after). para imprimir las columnas de antes: -b (before)
+
+**AWK**
+- ```awk '{sum +=$3; n++} END {if(n>0) print sum/n; }' ``` para calcular la media de la longitud del read
+
+**[SED](https://www.geeksforgeeks.org/sed-command-in-linux-unix-with-examples/)**
+- ``` $sed 's/unix/linux/' geekfile.txt``` replaces the word “unix” with “linux” in the file (*la "s" especifica que sustituya*)
+Por defecto, **sustituye la primera palabra** que le especificas ("unix") de cada linea (si hay una linea que tiene varias veces "unix", solo va asustituir la primera)
+- ``` $sed 's/unix/linux/2' geekfile.txt ``` Reemplaza la **segunda palabra** de cada linea (/2). Si quieres que reemplace la primera y segunda: /1,2 (?)
+- ```$sed 's/unix/linux/g' geekfile.txt``` Reemplaza **todas** las palabras (flag "g"). 
+- ```$sed 's/unix/linux/3g' geekfile.txt``` Reemplaza todas (g) a partir de la tercera (incluida)
+- ``` $ echo "Welcome To The Geek Stuff" | sed 's/\(\b[A-Z]\)/\(\1\)/g' ``` Pone la primera letra de cada paabra entre parentesis 
+   output: ``` (W)elcome (T)o (T)he (G)eek (S)tuff``` 
+- ```$sed '3 s/unix/linux/' geekfile.txt``` Hace sed en la fila numero 3 
+- ```$sed -n 's/unix/linux/p' geekfile.txt``` Print solo las lineas que reemplazas (flag /n)
 
 ## Compression
 - ```tar cf file.tar files``` create a tar named *file.tar* containing file
