@@ -81,6 +81,7 @@ Por defecto, **sustituye la primera palabra** que le especificas ("unix") de cad
    output: ``` (W)elcome (T)o (T)he (G)eek (S)tuff``` 
 - ```$sed '3 s/unix/linux/' geekfile.txt``` Hace sed en la fila numero 3 
 - ```$sed -n 's/unix/linux/p' geekfile.txt``` Print solo las lineas que reemplazas (flag /n)
+- ``` $ sed 's/[[:space:]]/_/g' Cytb_PM-bacchus.fasta ``` replace spaces by _
 - 
 
 ## Compression
