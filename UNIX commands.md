@@ -26,6 +26,7 @@
     - ```cp -r  dir1 dir 2``` copy directories
     - ```cp root/directory/file1 . ``` copia el archivo file1 de la carpeta directory en el directorio actual (lo llamas con el . ) y deja el nombre igual
 
+- ```scp file1 file2``` secure copy
 - ```mv file1 file2``` rename or move file1 to file2. si file2 existe, mueve file1 a file2
 
 - ```ln -s file link``` create symbolic lik *link* to file
