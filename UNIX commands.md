@@ -49,6 +49,7 @@
 - ```less readme.txt``` escribe el contenido de un archivo en la pantalla pagina a pagina. 
 
 ## Process Management
+- ```qsub script``` para poner a funcionar el script
 - ```ps``` display your currently active processes
 - ```top``` display all running processes
 - ```kill pid``` kill process id *pid*
