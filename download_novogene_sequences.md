@@ -27,9 +27,9 @@ screen -XS screen_name quit #to finish the screen
 
 ## TO MAKE SURE IS DOWNLOAD
 ### Summarize the integrity of all the files (*) in the working directory into the file checklist.chk
-md5sum * > checklist.chk
+```md5sum * > checklist.chk```
 
 ### Report the integrity of every file
-md5sum -c checklist.chk
+```md5sum -c checklist.chk```
 
 ### All files should give an "OK" note
