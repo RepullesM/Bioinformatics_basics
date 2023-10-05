@@ -33,6 +33,7 @@ wget -i -c links.xlsx
 ```
 
 ## TO MAKE SURE IS DOWNLOAD
+IMP: you have to be on the directory of the files, eiwtherway doesn't work properly the command
 ### Summarize the integrity of all the files (*) in the working directory into the file checklist.chk
 ```md5sum * > checklist.chk```
 
