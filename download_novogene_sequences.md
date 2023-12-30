@@ -16,6 +16,7 @@ Only use it for dowload data, don't use it to run programs!!
 screen -S screen_name #crear el screen y entrar en él
 ```
 To get out from it: ```ctr+A +D``` Be careful, don't press ctrl+D, you will kill the screen. You should press ctrl+A and then, press D
+You always have to quit the screen
 
 ```
 screen -ls #list of screens you have
