@@ -118,3 +118,16 @@ Por defecto, **sustituye la primera palabra** que le especificas ("unix") de cad
 ```
 colordiff --suppress-common-lines --brief trimming_adapt/default_parameters/trimmed_2/reads_ids_bc01.txt output_guppy_3/trimming_porechop/reads_ids_bc01.txt
 ```
+
+## change sequences names in a fasta file
+```
+#set the names file
+patterns_file=change_NCBI_names.txt
+
+for i in {1..9} ; do 
+#####loci 239
+target_file=clade_$i/mafft_L239.fasta
+while IFS=$'\t' read -r new_pattern L239 L3 L1 L1111 L5 L6 L7 L9 L10 L11 L12 L13; do
+    sed -i "s/${L239}/${new_pattern}/g" "$target_file"
+done < "$patterns_file"
+```
