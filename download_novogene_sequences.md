@@ -30,7 +30,7 @@ screen -XS screen_name quit #to finish the screen
 On the Novogene link of the mail, you have the possibility to dowload the data (Batch Download) that download directly the data on yor PC, or download the link list (Export Link). 
 If you download the link list, then put it on metacentrum and run the command: (confirmar que este es el comando, no estoy segura...)
 ```
-wget -i -c links.xlsx
+wget -i links.xlsx
 ```
 
 ## TO MAKE SURE IS DOWNLOAD
