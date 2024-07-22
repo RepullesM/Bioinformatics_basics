@@ -13,5 +13,6 @@ ssh -x repulles@minos.zcu.cz # Paso todo a este fronted para trabajar desde aqui
 
 ## Common backup:
 ```/storage/projects/matos_lab/```
-change oermit to allow other member to have acces:
+
+Change permit to allow other member to have acces:
 ```chmod -R g+rw folder_name/```
