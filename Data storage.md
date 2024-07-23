@@ -2,6 +2,7 @@
 ssh -x repulles@zuphux.cerit-sc.cz 
 backup/PHMA_phylogeny
 
+In "zuphux.cerit-sc.cz" I also have 03.Heliconius/ data and 01.bacchus_miION and I will have all the input data and output data, but I'll work from "@minos".
 ## Backup minION raw reads
 ssh -x repulles@minos.zcu.cz
 backup
