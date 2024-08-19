@@ -83,4 +83,5 @@ grep -A 10 23a636c0-9f8b-42a3-986a-c401afee6d95 trimming_adapt/default_parameter
 1. When the copy step is unsuccessful (for any reason), the clean_scratch command will not be executed, and you can pick up your data from the scratch directory later:
 ```cp -r * $MYIN/ || export CLEAN_SCRATCH=false```
 
-2. ```go_to_scratch job_ID ```
+2. You can manually log in to the compute node (ssh node_name), go to scratch (cd /scratch...), and copy what you need. Or you can use our utility go_to_scratch as follows:
+```go_to_scratch job_ID ```
