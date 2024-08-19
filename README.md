@@ -78,3 +78,9 @@ grep -A 10 23a636c0-9f8b-42a3-986a-c401afee6d95 trimming_adapt/default_parameter
 3. ```||``` el segundo comando se ejecuta si el primero acaba con exito 
 4. ```&&``` el segundo comando se ejecuta solo si el primero acaba con exito
 5. ```;``` el segundo se ejecuta sin importar el resultado del primero 
+
+#### METACENTRUM
+1. When the copy step is unsuccessful (for any reason), the clean_scratch command will not be executed, and you can pick up your data from the scratch directory later:
+```cp -r * $MYIN/ || export CLEAN_SCRATCH=false```
+
+2. ```go_to_scratch job_ID ```
