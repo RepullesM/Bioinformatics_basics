@@ -12,6 +12,12 @@ ssh -x repulles@adan1.grid.cesnet.cz #He estado trabajando aqui, pero parece que
 
 ssh -x repulles@minos.zcu.cz # Paso todo a este fronted para trabajar desde aqui 
 
+## Data for analysis (outputs & inputs)
+ssh -x repulles@zuphux.cerit-sc.cz:/storage/brno12-cerit/home/repulles
+
+## Work fom: (scripts and send jobs)
+ssh -x repulles@minos.zcu.cz
+
 ## Common backup:
 ```/storage/projects/matos_lab/```
 
