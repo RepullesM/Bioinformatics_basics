@@ -86,4 +86,4 @@ grep -A 10 23a636c0-9f8b-42a3-986a-c401afee6d95 trimming_adapt/default_parameter
 2. You can manually log in to the compute node (ssh node_name), go to scratch (cd /scratch...), and copy what you need. Or you can use our utility go_to_scratch as follows:
 ```go_to_scratch job_ID ```
 
-3. Interative job to run directly from your screen but not from the fronted: ```qsub -I ```
+3. Interative job to run directly from your screen but not from the fronted: ```qsub -I -l select=1:ncpus=4 -l walltime=2:00:00 ```. You can exit an interative job with ```$ exit```
