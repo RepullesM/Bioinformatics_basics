@@ -1,4 +1,4 @@
-# UNIX Commands
+# BASH Commands
 
 ## File commands
 - ```ls``` lista de lo que hay en el directorio
@@ -131,4 +131,8 @@ target_file=clade_$i/mafft_L239.fasta
 while IFS=$'\t' read -r new_pattern L239 L3 L1 L1111 L5 L6 L7 L9 L10 L11 L12 L13; do
     sed -i "s/${L239}/${new_pattern}/g" "$target_file"
 done < "$patterns_file"
+```
+## Mv files in .txt from a folder to another
+```
+while IFS= read -r file; do mv bam_2.5/"${file}" removedPCRdupl/"${file}"; done < removedPCRduplicates.txt
 ```
