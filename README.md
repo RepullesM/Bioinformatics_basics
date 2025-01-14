@@ -203,3 +203,5 @@ while IFS= read -r file; do mv bam_2.5/"${file}" removedPCRdupl/"${file}"; done 
 ```go_to_scratch job_ID ```
 
 3. Interative job to run directly from your screen but not from the fronted: ```qsub -I -l select=1:ncpus=4 -l walltime=2:00:00 ```. You can exit an interative job with ```$ exit```
+
+4. Open a screen to operate there without internet connection problems (if your connection fails, the job still running in the screen). It operates in the fronted, do not use it for demanding jobs: ```screen -S screen_name``` (see also download_novogene_sequences.md) 
