@@ -136,3 +136,11 @@ done < "$patterns_file"
 ```
 while IFS= read -r file; do mv bam_2.5/"${file}" removedPCRdupl/"${file}"; done < removedPCRduplicates.txt
 ```
+#### METACENTRUM
+1. When the copy step is unsuccessful (for any reason), the clean_scratch command will not be executed, and you can pick up your data from the scratch directory later:
+```cp -r * $MYIN/ || export CLEAN_SCRATCH=false```
+
+2. You can manually log in to the compute node (ssh node_name), go to scratch (cd /scratch...), and copy what you need. Or you can use our utility go_to_scratch as follows:
+```go_to_scratch job_ID ```
+
+3. Interative job to run directly from your screen but not from the fronted: ```qsub -I -l select=1:ncpus=4 -l walltime=2:00:00 ```. You can exit an interative job with ```$ exit```
