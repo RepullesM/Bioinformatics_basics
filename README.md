@@ -22,7 +22,7 @@ Para **crear carpetas con numeros consecutivos** :
 
 4. ```pwd``` para saber dónde estoy
 5.  ```git clone``` se descarga el repositorio que le especifíques.
-6.   ``gunzip``` para descomprimir archivos zip
+6.   ```gunzip``` para descomprimir archivos zip
 7.    ```wget``` para descargar programas
 En metacentrum la mayoría de los programas ya están decargados y lo que hay que hacer es llamarlos con ```module add programa1```
 8. ```programa1 -man``` para el manual del programa1
