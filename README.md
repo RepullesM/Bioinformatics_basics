@@ -75,6 +75,8 @@ cat archivo1 archivo2 > test.out
 
 - ```less readme.txt``` escribe el contenido de un archivo en la pantalla pagina a pagina. 
 
+- ```cat -A file``` To visualize invisible characters (tab, space...) --> VERY USEFUL when searching with grep or awk
+- ``` dos2unix File``` To convert your file to Unix format (will delete weird things at the end of the rows and so on, very useful for awk and grep as well)
 ## Process Management
 - ```qsub script``` para poner a funcionar el script
 - ```ps``` display your currently active processes
