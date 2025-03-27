@@ -27,3 +27,16 @@ I download this on ```my_modules``` folder. From now, to run angsd with a script
    source /storage/plzen1/home/repulles/.bashrc
    realSFS command
    ```
+
+## 3. Git clone
+(I don't know why, sometimes it work and sometimes doesn't)
+```
+git clone https://github.com/fgvieira/ngsLD.git
+cd ngsLD/
+make
+```
+Now, to run:
+```
+./ngsLD [options]
+/storage/plzen1/home/repulles/my_modules/ngsLD/ngsLD [options] #to run from somwhere else
+```
