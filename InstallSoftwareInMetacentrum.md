@@ -40,3 +40,21 @@ Now, to run:
 ./ngsLD [options]
 /storage/plzen1/home/repulles/my_modules/ngsLD/ngsLD [options] #to run from somwhere else
 ```
+
+## sticcs and twisst
+To install sticcs and twisst2, I couldn't do the regular git clone, there were some libraries that I needed. At the end, this worked:
+```
+module add mambaforge
+mamba activate /auto/plzen1/home/repulles/my_modules/sticcs_env
+
+# Instalar cyvcf2 desde bioconda (evita la compilación)
+mamba install -c bioconda cyvcf2 -y
+
+# Luego instalar STICCS desde GitHub
+pip install git+https://github.com/simonhmartin/sticcs.git@v0.0.5
+```
+And now, to run:
+```
+module add mambaforge
+mamba activate /auto/plzen1/home/repulles/my_modules/sticcs_env
+```
