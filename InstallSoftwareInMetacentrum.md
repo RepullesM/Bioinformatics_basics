@@ -58,3 +58,27 @@ And now, to run:
 module add mambaforge
 mamba activate /auto/plzen1/home/repulles/my_modules/sticcs_env
 ```
+## Pixy
+Install it via conda (I already installed conda [here](https://github.com/RepullesM/Bioinformatics_basics/blob/main/install_miniconda_environments.bash). To use conda, I just have to run:
+```
+source .bashrc
+```
+Once you have conda loaded, just follow [pixy's recomendation](https://pixy.readthedocs.io/en/latest/guide/pixy_guide.html#generate-a-vcf-with-invariant-sites-and-perform-filtering):
+```
+# create environment
+conda create --name pixy
+conda activate pixy
+# install pixy
+conda install --yes -c conda-forge pixy
+conda install --yes -c bioconda htslib
+# see argiments
+pixy --help
+```
+
+For now on, to run pixy:
+```
+source /storage/plzen1/home/repulles/.bashrc
+conda activate pixy
+```
+
+
