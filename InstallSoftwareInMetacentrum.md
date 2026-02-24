@@ -58,7 +58,7 @@ And now, to run:
 module add mambaforge
 mamba activate /auto/plzen1/home/repulles/my_modules/sticcs_env
 ```
-## Pixy, easySFS
+## Pixy
 Install it via conda (I already installed conda [here](https://github.com/RepullesM/Bioinformatics_basics/blob/main/install_miniconda_environments.bash). To use conda, I just have to run:
 ```
 source .bashrc
@@ -85,5 +85,27 @@ For now on, to run pixy:
 source /storage/plzen1/home/repulles/.bashrc
 conda activate pixy
 ```
-
-
+## easySFS
+```
+# use conda from mambaforge
+module load mambaforge
+# create environment
+conda create -n easySFS
+# activate env
+conda activate easySFS
+# Install dependencies with bioconda
+mamba install -c bioconda numpy pandas scipy -y
+# clone github directory
+git clone https://github.com/isaacovercast/easySFS.git
+# cd
+cd easySFS
+# change permits 
+chmod 777 easySFS.py
+# run easySFS
+./easySFS.py
+```
+And for now on:
+```
+module load mambaforge
+mamba activate /auto/plzen1/home/repulles/my_modules/easySFS
+```
