@@ -32,8 +32,16 @@ Now --> go to metacentrum
 Create a folder with all the files you want to upload and with the same names that you gave in the excell uploaded in ncbi.
 Then, you can run in a screen or a submit a job if many files:
 ```
-module load aspera-connect
-ascp -i /storage/plzen1/home/repulles/02.Nymphalidae_AF/01.PHMA_phylogeny/aspera.openssh -QT -l 1000m -k1 -d /storage/plzen1/home/repulles/02.Nymphalidae_AF/01.PHMA_phylogeny/toNCBI subasp@upload.ncbi.nlm.nih.gov:uploads/marepulles_gmail.com_LZFLTAAs
+#PBS -N ncbiDataTransfer
+#PBS -l select=1:ncpus=1:mem=50gb:scratch_local=400gb
+#PBS -l walltime=167:59:00
+#PBS -o ncbiDataTransfer.out
+#PBS -e ncbiDataTransfer.err
+
+module load aspera-cli
+ascp -i /storage/plzen1/home/repulles/02.Nymphalidae_AF/01.PHMA_phylogeny/aspera.openssh -QT -l 1000m -k1 -d /storage/plzen1/home/repulles/02.Nymphalidae_AF/01.PHMA_phylogeny/toSubmitNCBI subasp@upload.ncbi.nlm.nih.gov:uploads/marepulles_gmail.com_LZFLTAAs
+
+echo "transfer complete"
 ```
 Where you give the "key file" you downloaded from ncbi (aspera.openssh), your folder with files (toNCBI) and the path ncbi gave you. 
 
