@@ -58,12 +58,17 @@ And now, to run:
 module add mambaforge
 mamba activate /auto/plzen1/home/repulles/my_modules/sticcs_env
 ```
-## Pixy
+## Pixy, easySFS
 Install it via conda (I already installed conda [here](https://github.com/RepullesM/Bioinformatics_basics/blob/main/install_miniconda_environments.bash). To use conda, I just have to run:
 ```
 source .bashrc
 ```
-Once you have conda loaded, just follow [pixy's recomendation](https://pixy.readthedocs.io/en/latest/guide/pixy_guide.html#generate-a-vcf-with-invariant-sites-and-perform-filtering):
+Actually, I can directly use mambaforge for conda
+```
+module add mambaforge
+```
+
+Once you have conda loaded (or mambarforge), just follow [pixy's recomendation](https://pixy.readthedocs.io/en/latest/guide/pixy_guide.html#generate-a-vcf-with-invariant-sites-and-perform-filtering):
 ```
 # create environment
 conda create --name pixy
